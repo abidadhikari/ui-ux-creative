@@ -12,7 +12,11 @@ export default function HeroSection() {
             websites, apps, and digital products.
           </div>
           <div>
-            <LabelSparkle className="rotate-10 translate-y-[-100px] transition-all hover:rotate-0 " />
+            <LabelSparkle
+              className="bg-[#FFCF24] rotate-10 translate-y-[-100px] transition-all hover:rotate-0 "
+              text="Industry-leading Design"
+              isLeft={false}
+            />
           </div>
         </div>
         <h1 className="text-[183px] font-[900] leading-[120%]">UIUXCREATIVE</h1>

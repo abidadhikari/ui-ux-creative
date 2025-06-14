@@ -6,7 +6,10 @@ import arrowImage from "../../../public/arrow.svg";
 
 export default function LatestProjectCard() {
   return (
-    <div className="bg-[#4776E626] w-full rounded-[100px] p-[80px] overflow-hidden">
+    <Link
+      href="/beyondhimalayas"
+      className="bg-[#4776E626] block w-full rounded-[100px] p-[80px] overflow-hidden"
+    >
       <div className="flex items-start justify-between flex-row mb-2.5">
         <div className="flex  gap-[20px] flex-col  text-left w-full">
           <h3 className="font-extrabold text-4xl">BEYONDHIMALAYAS</h3>
@@ -39,6 +42,6 @@ export default function LatestProjectCard() {
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -30,3 +30,7 @@ body {
   width: 1350px;
   max-width: 95%;
 }
+
+.button-gradient {
+  background: linear-gradient(90deg, #4776e6 0%, #8e54e9 100%);
+}
