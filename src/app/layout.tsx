@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${caveat.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${inter.variable} ${caveat.variable} ${spaceGrotesk.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>

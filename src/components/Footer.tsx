@@ -7,18 +7,25 @@ export default function Footer() {
   return (
     <footer>
       <MarqueeSection />
-      <div className="py-[230px] pb-[130px] flex flex-col items-center justify-center gap-[100px]">
-        <div className=" relative w-fit">
-          <button className="button-gradient text-white py-[28px] px-[90px] font-bold text-4xl rounded-[100px] cursor-pointer hover:scale-[1.05] transition-all duration-300">
-            CONNECT
-          </button>
-          <div className="w-[290px] font-cursive text-4xl absolute font-bold right-[-140px] top-[-120px] rotate-8">
+      <div className="py-20 md:py-[230px] pb-[130px] flex flex-col items-center justify-center gap-[100px]">
+        <div className="flex flex-col-reverse gap-5  md:block relative w-fit items-center justify-center">
+          <Link
+            href="https://wa.me/9779813270713?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button-gradient text-white py-[28px] px-[70px] md:px-[90px] font-bold text-3xl md:text-4xl rounded-[100px] cursor-pointer hover:scale-[1.05] transition-all duration-300 w-fit">
+              CONNECT
+            </button>
+          </Link>
+
+          <div className="w-full md:w-[290px] font-cursive text-4xl relative md:absolute font-bold right-0 md:right-[-140px] top-0  md:top-[-120px] md:rotate-8 text-center md:text-left">
             Tap this &lsquo;tiny&rsquo; button to start your product =)
           </div>
         </div>
       </div>
-      <section className="my-width m-auto flex  items-center justify-center gap-[100px] text-center mb-[125px] text-2xl leading-1.5">
-        <div className="">
+      <section className="my-width m-auto flex flex-wrap items-center justify-center gap-10 md:gap-[100px] text-center mb-[125px] text-2xl leading-1.5">
+        <Link href="mailto:uiuxcreative2821@gmail.com" className="">
           <Image
             src="/Message.svg"
             alt="message"
@@ -27,8 +34,8 @@ export default function Footer() {
             className="inline-block mr-2"
           />
           uiuxcreative2821@gmail.com
-        </div>
-        <div>
+        </Link>
+        <Link href={"phone:+9779813270713"} className="">
           <Image
             src="/Call.svg"
             alt="call"
@@ -37,7 +44,7 @@ export default function Footer() {
             className="inline-block mr-2"
           />
           +977 9813270713
-        </div>
+        </Link>
         <div className="flex items-center justify-center gap-6">
           <Link href="/">
             <Image

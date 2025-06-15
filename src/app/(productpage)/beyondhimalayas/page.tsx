@@ -7,7 +7,7 @@ export default function Page() {
         LOGO
       </div>
       <h1 className="font-bold text-4xl mb-5">BEYONDHIMALAYAS</h1>
-      <p className="w-[700px] text-center text-2xl mb-[60px]">
+      <p className="w-[700px] max-w-[90%] text-center text-2xl mb-[60px]">
         Polpis Systems is transforming geothermal energy with deep Earth
         exploration. I got a chance to collaborate with their founders while
         still part of the 0O design team. In short, they needed a complete
@@ -30,7 +30,7 @@ export default function Page() {
         <div className="w-full h-[650px] flex items-center justify-center bg-[#E4EBFB] rounded-[100px]">
           Image
         </div>
-        <div className="flex items center gap-[40px]">
+        <div className="flex items center gap-[40px] flex-wrap w-full">
           <div className="w-full h-[600px] flex items-center justify-center bg-[#E4EBFB] rounded-[100px]">
             Image
           </div>
@@ -40,8 +40,8 @@ export default function Page() {
         </div>
       </div>
 
-      <section className="mt-28">
-        <p className="w-[700px] text-center text-2xl mb-[40px]">
+      <section className="mt-28 w-full">
+        <p className="w-[700px] max-w-[90%] text-center text-2xl mb-[40px]">
           &quot;Polpis Systems is transforming geothermal energy with deep Earth
           exploration. I got a chance to collaborate with their founders while
           still part of the 0O design team. In short, they needed a complete

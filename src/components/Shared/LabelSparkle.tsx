@@ -10,7 +10,7 @@ export default function LabelSparkle(props: {
   const { className, text, isLeft } = props;
   return (
     <div
-      className={`font-space-grotesk  border-black border-[8px] py-[10px] px-[45px] text-[29px] rounded-[92px] relative ${className}`}
+      className={`font-space-grotesk  border-black border-[8px] py-[10px] px-[25px] lg:px-[45px] text-[14px] sm:text-[29px] rounded-[92px] relative ${className}`}
     >
       {text}
       <Image

@@ -3,12 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import arrowImage from "../../../public/arrow.svg";
-import CursorFollower from "@/components/CursorFollower";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <CursorFollower />
       <div className="my-width m-auto">
         <div className="py-10">
           <Link href="/">

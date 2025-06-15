@@ -5,27 +5,30 @@ import LabelSparkle from "./Shared/LabelSparkle";
 
 export default function StepsSection() {
   return (
-    <div className="my-width m-auto py-[80px]  flex items-center justify-center flex-col">
-      <h2 className="text-[60px] font-extrabold mb-[110px]  uppercase text-center leading-[100%] relative">
+    <div
+      className="my-width m-auto py-[80px]  flex items-center justify-center flex-col"
+      id="process"
+    >
+      <h2 className="text-2xl md:text-[60px] font-extrabold mb-[110px]  uppercase text-center leading-[100%] relative">
         What OUR perfect
         <br /> collab looks like
         <Image
           src={greenArrow}
           width={150}
           alt="green arrow"
-          className="inline-block  absolute right-[-220px]"
+          className=" hidden md:inline-block  absolute right-[-220px]"
         />
       </h2>
       <div className="w-full flex flex-col gap-[65px] items-center justify-center relative">
-        <div className="absolute left-0">
+        <div className="relative lg:absolute left-0">
           <LabelSparkle
-            className="bg-[#F3ABCB] rotate-[-10deg] transition-all hover:rotate-0  "
+            className="bg-[#F3ABCB] md:rotate-[-10deg] transition-all hover:rotate-0  "
             text="Our Process"
             isLeft={true}
           />
         </div>
         <div
-          className="w-[600px] rounded-[100px] h-fit overflow-hidden "
+          className="w-[600px] max-w-full rounded-[100px] h-fit overflow-hidden "
           style={{
             boxShadow: `
       inset 0px -4px 4px 0px #00000014,
@@ -52,7 +55,7 @@ export default function StepsSection() {
               return (
                 <div
                   key={index}
-                  className="text-[#4776E6] font-cursive border-[2px] border-[#f5f5f5]  text-[30px] h-[40px] leading-[30px]"
+                  className="text-[#4776E6] font-cursive border-[2px] border-[#f5f5f5] text-2xl md:text-[30px] h-[40px] leading-[30px] font-semibold"
                 >
                   <span className={index === 6 ? "ml-16" : "ml-12"}>
                     {" "}
