@@ -7,7 +7,7 @@ export default function MarqueeSection() {
         {[...Array(30)].map((_, index: number) => {
           return (
             <span
-              className="font-space-grotesk mr-[24px] font-[700]"
+              className="font-space-grotesk mr-[24px] font-[700] text-xl"
               key={index}
             >
               Let&apos;s Build Together

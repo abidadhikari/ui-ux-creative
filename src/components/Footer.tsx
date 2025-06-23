@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <MarqueeSection />
-      <div className="py-20 md:py-[230px] pb-[130px] flex flex-col items-center justify-center gap-[100px]">
+      <div className="py-20 md:py-[200px] !pb-[140px] flex flex-col items-center justify-center gap-[100px]">
         <div className="flex flex-col-reverse gap-5  md:block relative w-fit items-center justify-center">
           <Link
             href="https://wa.me/9779813270713?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services"
@@ -24,8 +24,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <section className="my-width m-auto flex flex-wrap items-center justify-center gap-10 md:gap-[100px] text-center mb-[125px] text-2xl leading-1.5">
-        <Link href="mailto:uiuxcreative2821@gmail.com" className="">
+      <section className="my-width m-auto flex flex-wrap items-center justify-center gap-10 md:gap-[100px] text-center mb-[80px] text-2xl leading-1.5">
+        <Link href="mailto:uiuxcreative2021@gmail.com" className="">
           <Image
             src="/Message.svg"
             alt="message"
@@ -33,7 +33,7 @@ export default function Footer() {
             height={32}
             className="inline-block mr-2"
           />
-          uiuxcreative2821@gmail.com
+          uiuxcreative2021@gmail.com
         </Link>
         <Link href={"phone:+9779813270713"} className="">
           <Image
@@ -46,7 +46,12 @@ export default function Footer() {
           +977 9813270713
         </Link>
         <div className="flex items-center justify-center gap-6">
-          <Link href="/">
+          <Link
+            href="
+https://www.instagram.com/ui.uxcreative"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/Instagram.svg"
               alt="Instagram"
@@ -55,7 +60,11 @@ export default function Footer() {
               className="inline-block hover:translate-y-[-5px] transition-all duration-300"
             />
           </Link>
-          <Link href="/">
+          <Link
+            href="https://dribbble.com/rkmhrzn18"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/Dribble.svg"
               alt="Dribble"
@@ -64,7 +73,11 @@ export default function Footer() {
               className="inline-block hover:translate-y-[-5px] transition-all duration-300"
             />
           </Link>
-          <Link href="/">
+          <Link
+            href="https://www.tiktok.com/@uiuxcreative18"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/Tiktok.svg"
               alt="Tiktok"
@@ -74,7 +87,7 @@ export default function Footer() {
             />
           </Link>
 
-          <Link href="/">
+          {/* <Link href="/">
             <Image
               src="/Youtube.svg"
               alt="Youtube"
@@ -82,7 +95,7 @@ export default function Footer() {
               height={40}
               className="inline-block hover:translate-y-[-5px] transition-all duration-300"
             />
-          </Link>
+          </Link> */}
         </div>
       </section>
     </footer>

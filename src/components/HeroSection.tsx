@@ -15,13 +15,13 @@ export default function HeroSection() {
           </div>
           <div>
             <LabelSparkle
-              className="bg-[#FFCF24]  lg:rotate-10 lg:translate-y-[-100px] transition-all hover:rotate-0 "
+              className="bg-[#FFCF24]  lg:rotate-10 lg:translate-y-[-100px] transition-all hover:rotate-0 font-bold "
               text="Industry-leading Design"
               isLeft={false}
             />
           </div>
         </div>
-        <h1 className=" mt-5 md:mt-0 text-[45px] sm:text-[50px] md:text-[100px] lg:text-[183px] font-[900] leading-[120%]">
+        <h1 className=" mt-5 md:mt-0 text-[45px] sm:text-[50px] md:text-[100px] lg:text-[183px] 3xl:text-red-300 font-[900] leading-[120%] [@media(min-width:1920px)]:text-[220px] ">
           UIUXCREATIVE
         </h1>
       </div>

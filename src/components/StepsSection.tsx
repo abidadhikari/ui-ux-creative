@@ -22,13 +22,13 @@ export default function StepsSection() {
       <div className="w-full flex flex-col gap-[65px] items-center justify-center relative">
         <div className="relative lg:absolute left-0">
           <LabelSparkle
-            className="bg-[#F3ABCB] md:rotate-[-10deg] transition-all hover:rotate-0  "
+            className="bg-[#F3ABCB] md:rotate-[-15deg] transition-all hover:rotate-0  "
             text="Our Process"
             isLeft={true}
           />
         </div>
         <div
-          className="w-[600px] max-w-full rounded-[100px] h-fit overflow-hidden "
+          className="w-[600px] h-[580px] max-w-full rounded-[100px]  overflow-hidden "
           style={{
             boxShadow: `
       inset 0px -4px 4px 0px #00000014,
@@ -55,7 +55,7 @@ export default function StepsSection() {
               return (
                 <div
                   key={index}
-                  className="text-[#4776E6] font-cursive border-[2px] border-[#f5f5f5] text-2xl md:text-[30px] h-[40px] leading-[30px] font-semibold"
+                  className="text-[#4776E6] font-cursive border-[2px] border-[#f5f5f5] text-2xl md:text-[30px] h-[50px] leading-[30px] font-semibold"
                 >
                   <span className={index === 6 ? "ml-16" : "ml-12"}>
                     {" "}

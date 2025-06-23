@@ -9,13 +9,28 @@ export default function LatestProject() {
     >
       <h2 className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px]  font-extrabold mb-[110px] relative">
         OUR LATEST WORKS
-        <span className="text-2xl lg:text-4xl font-cursive bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-transparent bg-clip-text absolute top-[-30px] right-[-30px] pr-1 rotate-[10deg]">
+        <span className="text-2xl lg:text-4xl font-cursive bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-transparent bg-clip-text absolute top-[-30px] right-[-80px] pr-1 rotate-[5deg]">
           Since 2021
         </span>
       </h2>
       <div className="w-full flex flex-col gap-[65px]">
-        <LatestProjectCard />
-        <LatestProjectCard />
+        <LatestProjectCard
+          title="AGILE ACADEMY"
+          description="Hi! Meet your trusted design partner, crafting strong brands for
+            SaaS and Web3."
+          img1="/images/project/p11.svg"
+          img2="/images/project/p12.svg"
+          link="/agile-academy"
+        />
+        <LatestProjectCard
+          title="CAREERAI"
+          description="Hi! Meet your trusted design partner, crafting strong brands for
+            SaaS and Web3."
+          img1="/images/project/p21.png"
+          img2="/images/project/p22.svg"
+          secondImageClass="!md:rotate-[50deg]"
+          link="/careerai"
+        />
       </div>
     </div>
   );
