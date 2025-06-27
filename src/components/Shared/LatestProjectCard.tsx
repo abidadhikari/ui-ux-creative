@@ -17,18 +17,17 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
   return (
     <Link
       href={link}
-      className="bg-[#4776E626] block w-full rounded-[50px] md:rounded-[100px] p-[30px]  md:p-[80px] overflow-hidden group"
+      className="bg-[#F5F5F5] block w-full rounded-[50px] md:rounded-[100px] p-[30px]  md:p-[80px] overflow-hidden group"
     >
       <div className="flex items-start justify-between flex-row mb-2.5 ">
         <div className="flex  gap-[20px] flex-col  text-left w-full">
           <h3 className="font-extrabold text-2xl md:text-4xl">{title}</h3>
-          <p className="text-[20px] leading-[140%] w-full md:w-[500px] ">
+          <p className="text-base sm:text-[20px] leading-[140%] w-full md:w-[500px] ">
             {description}
           </p>
         </div>
-        <Link href={"/"}>
-          <Image src={arrowImage} alt="arrow" />
-        </Link>
+
+        <Image src={arrowImage} alt="arrow" />
       </div>
       <div className="md:h-[250px] flex flex-col md:flex-row items-center justify-center gap-5 relative  w-full">
         <div className="h-[200px] md:h-[502px] w-[550px] max-w-full   md:translate-y-[160px] md:rotate-[-10deg] md:group-hover:translate-y-[120px] transition-all ease-in-out">

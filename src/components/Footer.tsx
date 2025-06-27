@@ -19,7 +19,7 @@ export default function Footer() {
             </button>
           </Link>
 
-          <div className="w-full md:w-[290px] font-cursive text-4xl relative md:absolute font-bold right-0 md:right-[-140px] top-0  md:top-[-120px] md:rotate-8 text-center md:text-left">
+          <div className="w-full md:w-[290px] font-cursive text-[32px] leading-[100%] relative md:absolute font-bold right-0 md:right-[-190px] top-0  md:top-[-90px] md:rotate-8 text-center md:text-left">
             Tap this &lsquo;tiny&rsquo; button to start your product =)
           </div>
         </div>

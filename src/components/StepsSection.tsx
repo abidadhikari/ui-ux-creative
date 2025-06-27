@@ -9,7 +9,7 @@ export default function StepsSection() {
       className="my-width m-auto py-[80px]  flex items-center justify-center flex-col"
       id="process"
     >
-      <h2 className="text-2xl md:text-[60px] font-extrabold mb-[110px]  uppercase text-center leading-[100%] relative">
+      <h2 className="text-2xl md:text-[60px] font-extrabold mb-[50px] sm:mb-[110px]  uppercase text-center leading-[100%] relative">
         What OUR perfect
         <br /> collab looks like
         <Image
@@ -28,7 +28,7 @@ export default function StepsSection() {
           />
         </div>
         <div
-          className="w-[600px] h-[580px] max-w-full rounded-[100px]  overflow-hidden "
+          className="w-[600px] h-fit sm:h-[580px] max-w-full rounded-[100px]  overflow-hidden "
           style={{
             boxShadow: `
       inset 0px -4px 4px 0px #00000014,
@@ -39,7 +39,7 @@ export default function StepsSection() {
     `,
           }}
         >
-          <div className="h-[120px] w-full bg-[#FFCF24]"></div>
+          <div className="h-[80px] sm:h-[120px] w-full bg-[#FFCF24]"></div>
           <div>
             {[
               "",
