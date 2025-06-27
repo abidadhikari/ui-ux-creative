@@ -48,7 +48,9 @@ export default function HeroSection() {
         </div>
         <div className="mt-[30px] flex items-center justify-center">
           <Link
-            href="#"
+            href="https://wa.me/9779813270713?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+            target="_blank"
+            rel="noopener noreferrer"
             className="button-gradient p-[13px_38px] rounded-[100px] text-white font-[600] text-[14px]"
           >
             Start Project
