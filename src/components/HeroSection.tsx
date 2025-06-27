@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 export default function HeroSection() {
   return (
-    <div className="pt-[400px] pb-[132px] h-screen bg-[url('/herogradient.svg')] bg-cover bg-center flex flex-col items-center justify-center text-white text-center">
+    <div className="pt-[200px] sm:pt-[400px] pb-[132px] h-screen bg-[url('/herogradient.svg')] bg-cover bg-center flex flex-col items-center justify-center text-white text-center">
       <NavBar />
       <div className="my-width m-auto text-black ">
         <div className="w-full flex-col lg:flex-row  flex items-center justify-between gap-12 lg:gap-0">

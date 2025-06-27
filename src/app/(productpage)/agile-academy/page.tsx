@@ -13,6 +13,7 @@ export default function Page() {
         topImage="/images/project/p11top.svg"
         bottomLeftImage="/images/project/p11bottomleft.svg"
         bottomRightImage="/images/project/p11bottomright.svg"
+        visitLink="https://www.agileacademy.io/"
       />
     </>
   );

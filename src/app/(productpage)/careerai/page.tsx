@@ -8,11 +8,13 @@ export default function Page() {
         logo="/images/project/p2logo.svg"
         logoBgColor="#2A1F88"
         title="CAREERAI"
-        description="CareerAI is built for individuals and institutions alike. We aim to ease the process of job hunting and applying to ensure maximum chances of getting hired. We understand the need to pay attention to details and follow through with each approach."
+        description="
+CareerAI is a free AI-powered tool that helps users create ATS-friendly resumes and cover letters, track job applications, and even auto-fill forms with a Chrome extension. It also offers a virtual assistant to apply for jobs on your behalf."
         tags={["Web Design", "UI/UX Design"]}
         topImage="/images/project/p22top.svg"
         bottomLeftImage="/images/project/p22bottomleft.svg"
         bottomRightImage="/images/project/p22bottomright.svg"
+        visitLink="https://careerai.app"
       />
       <section className="my-16 mt-0 w-full flex items-center justify-center flex-col ">
         <p className="w-[720px] max-w-[90%] text-center text-2xl mb-[40px]">

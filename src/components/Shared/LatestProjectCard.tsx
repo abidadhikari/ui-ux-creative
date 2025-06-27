@@ -31,7 +31,7 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
         </Link>
       </div>
       <div className="md:h-[250px] flex flex-col md:flex-row items-center justify-center gap-5 relative  w-full">
-        <div className="h-[200px] md:h-[502px] w-[550px] max-w-full   md:translate-y-[140px] md:rotate-[-10deg] md:group-hover:translate-y-[120px] transition-all ease-in-out">
+        <div className="h-[200px] md:h-[502px] w-[550px] max-w-full   md:translate-y-[160px] md:rotate-[-10deg] md:group-hover:translate-y-[120px] transition-all ease-in-out">
           <Image
             width={550}
             height={600}

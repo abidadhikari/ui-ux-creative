@@ -16,19 +16,17 @@ export default function LatestProject() {
       <div className="w-full flex flex-col gap-[65px]">
         <LatestProjectCard
           title="AGILE ACADEMY"
-          description="Hi! Meet your trusted design partner, crafting strong brands for
-            SaaS and Web3."
+          description="Agile Academy is a professional learning platform focused on Agile, Scrum, and leadership development. "
           img1="/images/project/p11.svg"
           img2="/images/project/p12.svg"
           link="/agile-academy"
         />
         <LatestProjectCard
           title="CAREERAI"
-          description="Hi! Meet your trusted design partner, crafting strong brands for
-            SaaS and Web3."
+          description="CareerAI is a free AI-powered tool that helps users create ATS-friendly resumes and cover letters, track job applications, and even auto-fill forms with a Chrome extension."
           img1="/images/project/p21.png"
-          img2="/images/project/p22.svg"
-          secondImageClass="!md:rotate-[50deg]"
+          img2="/images/project/p22.png"
+          // secondImageClass="!md:rotate-[50deg]"
           link="/careerai"
         />
       </div>

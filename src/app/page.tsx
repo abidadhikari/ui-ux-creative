@@ -5,7 +5,7 @@ import StepsSection from "@/components/StepsSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <LatestProject />
       <StepsSection />

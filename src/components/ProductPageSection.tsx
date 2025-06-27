@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import HoverLabel from "./HoverLabel";
 
 interface ProductPageSectionProps {
   logoBgColor?: string;
@@ -10,6 +12,7 @@ interface ProductPageSectionProps {
   topImage: string;
   bottomLeftImage: string;
   bottomRightImage: string;
+  visitLink: string;
 }
 
 export default function ProductPageSection(props: ProductPageSectionProps) {
@@ -22,6 +25,7 @@ export default function ProductPageSection(props: ProductPageSectionProps) {
     topImage,
     bottomLeftImage,
     bottomRightImage,
+    visitLink,
   } = props;
   return (
     <div className="flex flex-col items-center justify-center pb-32">
@@ -55,28 +59,40 @@ export default function ProductPageSection(props: ProductPageSectionProps) {
       </div>
 
       <div className="flex items center gap-[40px] flex-col w-full ">
-        <Image
-          src={topImage}
-          alt="Top Image"
-          width={1200}
-          height={600}
-          className="!w-full h-fit  "
-        />
+        <HoverLabel label={`Visit ${title}`}>
+          <Link href={visitLink || "#"}>
+            <Image
+              src={topImage}
+              alt="Top Image"
+              width={1200}
+              height={600}
+              className="!w-full h-fit  "
+            />
+          </Link>
+        </HoverLabel>
         <div className="grid grid-cols-2 gap-[40px]  w-full">
-          <Image
-            src={bottomLeftImage}
-            alt="Top Image"
-            width={1200}
-            height={600}
-            className="w-full h-fit   "
-          />
-          <Image
-            src={bottomRightImage}
-            alt="Top Image"
-            width={1200}
-            height={600}
-            className="w-full h-fit   "
-          />
+          <HoverLabel label={`Visit ${title}`}>
+            <Link href={visitLink || "#"}>
+              <Image
+                src={bottomLeftImage}
+                alt="Top Image"
+                width={1200}
+                height={600}
+                className="w-full h-fit   "
+              />
+            </Link>
+          </HoverLabel>
+          <HoverLabel label={`Visit ${title}`}>
+            <Link href={visitLink || "#"}>
+              <Image
+                src={bottomRightImage}
+                alt="Top Image"
+                width={1200}
+                height={600}
+                className="w-full h-fit   "
+              />
+            </Link>
+          </HoverLabel>
         </div>
       </div>
     </div>
