@@ -65,6 +65,7 @@ export default function ProductPageSection(props: ProductPageSectionProps) {
               width={1200}
               height={600}
               className="!w-full h-fit  "
+              quality={100}
             />
           </Link>
         </HoverLabel>
@@ -76,6 +77,7 @@ export default function ProductPageSection(props: ProductPageSectionProps) {
               width={1200}
               height={600}
               className="!w-full h-fit  "
+              quality={100}
             />
           </Link>
         </HoverLabel>

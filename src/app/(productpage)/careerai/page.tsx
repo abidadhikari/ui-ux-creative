@@ -11,7 +11,7 @@ export default function Page() {
         description="
 CareerAI is a free AI-powered tool that helps users create ATS-friendly resumes and cover letters, track job applications, and even auto-fill forms with a Chrome extension. It also offers a virtual assistant to apply for jobs on your behalf."
         tags={["Web Design", "UI/UX Design"]}
-        topImage="/images/project/careerai/top.svg"
+        topImage="/images/project/careerai/top.png"
         bottomImage="/images/project/careerai/bottom.svg"
         visitLink="https://careerai.app"
       />
