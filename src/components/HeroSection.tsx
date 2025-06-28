@@ -2,7 +2,6 @@ import React from "react";
 import LabelSparkle from "./Shared/LabelSparkle";
 import NavBar from "./NavBar";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -28,15 +27,13 @@ export default function HeroSection() {
         </h1>
       </div>
       <div className="block sm:hidden my-width m-auto text-black ">
-        <div className="w-full flex-row  flex items-center justify-end mb-[9px]">
-          <div>
-            <Image
-              src="/mobileHeroLabel.svg"
-              alt="Label"
-              width={200}
-              height={50}
-            />
-          </div>
+        <div className="w-full flex-row  flex items-center justify-center mb-[9px]">
+          <LabelSparkle
+            className="bg-[#FFCF24]  lg:rotate-10 lg:translate-y-[-100px] transition-all hover:rotate-0 font-bold "
+            text="Industry-leading Design"
+            isLeft={false}
+            small
+          />
         </div>
         <h1 className=" text-[45px]  font-[900] leading-[120%] mb-2.5">
           UIUXCREATIVE

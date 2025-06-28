@@ -11,12 +11,11 @@ export default function Page() {
         description="
 CareerAI is a free AI-powered tool that helps users create ATS-friendly resumes and cover letters, track job applications, and even auto-fill forms with a Chrome extension. It also offers a virtual assistant to apply for jobs on your behalf."
         tags={["Web Design", "UI/UX Design"]}
-        topImage="/images/project/p22top.svg"
-        bottomLeftImage="/images/project/p22bottomleft.svg"
-        bottomRightImage="/images/project/p22bottomright.svg"
+        topImage="/images/project/careerai/top.svg"
+        bottomImage="/images/project/careerai/bottom.svg"
         visitLink="https://careerai.app"
       />
-      <section className="my-16 mt-0 w-full flex items-center justify-center flex-col ">
+      {/* <section className="my-16 mt-0 w-full flex items-center justify-center flex-col ">
         <p className="w-[720px] max-w-[90%] text-center text-2xl mb-[40px]">
           &quot;Working with Rikesh was a seamless and inspiring experience. As
           the UI/UX designer he brought clarity to our vision and transformed
@@ -28,7 +27,7 @@ CareerAI is a free AI-powered tool that helps users create ATS-friendly resumes 
         </p>
         <p className="text-center text-2xl font-semibold">Maven Solutions</p>
         <p className="text-center text-xl ">Co Founder</p>
-      </section>
+      </section> */}
     </>
   );
 }

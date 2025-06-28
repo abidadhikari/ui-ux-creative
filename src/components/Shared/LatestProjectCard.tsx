@@ -22,7 +22,7 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
       <div className="flex items-start justify-between flex-row mb-2.5 ">
         <div className="flex  gap-[20px] flex-col  text-left w-full">
           <h3 className="font-extrabold text-2xl md:text-4xl">{title}</h3>
-          <p className="text-base sm:text-[20px] leading-[140%] w-full md:w-[500px] ">
+          <p className="text-base sm:text-[20px] leading-[140%] w-full md:w-[500px] line-clamp-2 ">
             {description}
           </p>
         </div>

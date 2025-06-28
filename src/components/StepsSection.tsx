@@ -9,6 +9,14 @@ export default function StepsSection() {
       className="my-width m-auto py-[80px]  flex items-center justify-center flex-col"
       id="process"
     >
+      <div className="block sm:hidden relative mb-5">
+        <LabelSparkle
+          className="bg-[#F3ABCB] md:rotate-[-15deg] transition-all hover:rotate-0  "
+          text="Our Process"
+          isLeft={true}
+          small
+        />
+      </div>
       <h2 className="text-2xl md:text-[60px] font-extrabold mb-[50px] sm:mb-[110px]  uppercase text-center leading-[100%] relative">
         What OUR perfect
         <br /> collab looks like
@@ -20,11 +28,12 @@ export default function StepsSection() {
         />
       </h2>
       <div className="w-full flex flex-col gap-[65px] items-center justify-center relative">
-        <div className="relative lg:absolute left-0">
+        <div className="hidden sm:block relative lg:absolute left-0">
           <LabelSparkle
             className="bg-[#F3ABCB] md:rotate-[-15deg] transition-all hover:rotate-0  "
             text="Our Process"
             isLeft={true}
+            small
           />
         </div>
         <div

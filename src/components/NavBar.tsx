@@ -15,12 +15,12 @@ export default function NavBar() {
     }
   }, []);
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 sm:pt-10  w-full flex   justify-center items-center ">
+    <header className="fixed top-0 left-0 right-0 z-100 sm:pt-10  w-full flex   justify-center items-center ">
       <button
         type="button"
         className={` sm:hidden shadow-2xl rounded-full cursor-pointer backdrop-blur-2xl text-black p-2 fixed ${
           openNavBar ? "right-[20px] top-[20px]" : "right-[20px] top-[20px]"
-        } sm:border z-50 `}
+        } sm:border z-100 `}
         onClick={() => {
           setOpenNavBar(!openNavBar);
         }}
@@ -59,13 +59,13 @@ export default function NavBar() {
         )}
       </button>
       {openNavBar && (
-        <nav className="bg-[url('/herogradient.svg')] sm:bg-none flex  items-start sm:items-center justify-start sm:justify-center  flex-col sm:flex-row gap-0  text-sm md:text-lg text-black bg-white backdrop-blur-2xl w-screen sm:w-fit sm:max-w-[90%]  px-[25px] sm:px-[45px] py-[89px] sm:py-4 rounded-0 sm:rounded-[100px] shadow-2xl h-[100vh]  sm:h-fit ">
+        <nav className="bg-[url('/herogradient.svg')] sm:bg-none flex  items-start sm:items-center justify-start sm:justify-center  flex-col sm:flex-row gap-0  text-sm md:text-lg text-black bg-white backdrop-blur-2xl w-screen sm:w-fit sm:max-w-[90%]  px-[25px]  sm:px-[20px] py-[89px] sm:py-2 rounded-0 sm:rounded-[100px] shadow-2xl h-[100vh]  sm:h-fit ">
           <Link
             href="/#work"
             onClick={() => {
               closeNavBar();
             }}
-            className="py-[10px] px-[16px] "
+            className="py-[6px] px-[16px] "
           >
             Work
           </Link>
@@ -75,7 +75,7 @@ export default function NavBar() {
             onClick={() => {
               closeNavBar();
             }}
-            className="py-[10px] px-[16px] "
+            className="py-[6px] px-[16px] "
           >
             Process
           </Link>
@@ -84,7 +84,7 @@ export default function NavBar() {
             onClick={() => {
               closeNavBar();
             }}
-            className="py-[10px] px-[16px] "
+            className="py-[6px] px-[16px] "
             target="_blank"
           >
             Learn UI/UX Design
@@ -96,7 +96,7 @@ export default function NavBar() {
             onClick={() => {
               closeNavBar();
             }}
-            className="py-[10px] px-[16px] sm:button-gradient sm:text-white rounded-[30px] flex items-center justify-center gap-2 hover:scale-[1.05] transition-all duration-300"
+            className="py-[6px] px-[16px] button-gradient remove-btn-gradient-for-sm  sm:text-white  rounded-[30px] flex items-center justify-center gap-2 hover:scale-[1.05] transition-all duration-300 "
           >
             Start Project{" "}
             <svg
