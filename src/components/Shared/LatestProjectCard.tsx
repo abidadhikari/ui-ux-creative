@@ -14,7 +14,7 @@ interface LatestProjectCardProps {
   secondImageClass?: string;
 }
 export default function LatestProjectCard(props: LatestProjectCardProps) {
-  const { title, description, img1, img2, img, link } = props;
+  const { title, description, img, link } = props;
   return (
     <Link
       href={link}
