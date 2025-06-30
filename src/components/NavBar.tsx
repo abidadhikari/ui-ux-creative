@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import { cn } from "./utils/cn";
 
 export default function NavBar() {
   const [openNavBar, setOpenNavBar] = React.useState(true);
+  const [isMobile, setIsMobile] = React.useState(false);
   const closeNavBar = () => {
     if (window.innerWidth <= 635) {
       setOpenNavBar(false);
@@ -12,10 +14,19 @@ export default function NavBar() {
   useEffect(() => {
     if (window.innerWidth <= 635) {
       setOpenNavBar(false);
+      setIsMobile(true);
     }
   }, []);
   return (
-    <header className="fixed top-0 left-0 right-0 z-100 sm:pt-10  w-full flex   justify-center items-center ">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0  sm:pt-8  w-full flex   justify-center items-center ",
+        {
+          "z-100": !isMobile,
+          "z-[9999999]": isMobile,
+        }
+      )}
+    >
       <button
         type="button"
         className={` sm:hidden shadow-2xl rounded-full cursor-pointer backdrop-blur-2xl text-black p-2 fixed ${

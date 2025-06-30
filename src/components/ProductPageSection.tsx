@@ -58,29 +58,40 @@ export default function ProductPageSection(props: ProductPageSectionProps) {
 
       <div className="flex items center gap-[40px] flex-col w-full ">
         <HoverLabel label={`Visit ${title}`}>
-          <Link href={visitLink || "#"}>
+          <Link
+            href={visitLink || "#"}
+            className="w-full block bg-[#F5F5F5] rounded-2xl md:rounded-[100px] p-[20px] md:p-[46px_154px]"
+          >
             <Image
               src={topImage}
               alt="Top Image"
-              width={1200}
+              width={1366}
               height={600}
               className="!w-full h-fit  "
               quality={100}
             />
           </Link>
         </HoverLabel>
-        <HoverLabel label={`Visit ${title}`}>
-          <Link href={visitLink || "#"}>
-            <Image
-              src={bottomImage}
-              alt="Top Image"
-              width={1200}
-              height={600}
-              className="!w-full h-fit  "
-              quality={100}
-            />
-          </Link>
-        </HoverLabel>
+        {bottomImage?.length > 0 && (
+          <>
+            {" "}
+            <HoverLabel label={`Visit ${title}`}>
+              <Link
+                href={visitLink || "#"}
+                className="w-full block bg-[#F5F5F5] rounded-2xl md:rounded-[100px] p-[20px] md:p-[95px_120px]"
+              >
+                <Image
+                  src={bottomImage}
+                  alt="Top Image"
+                  width={1366}
+                  height={600}
+                  className="!w-full h-fit  "
+                  quality={100}
+                />
+              </Link>
+            </HoverLabel>
+          </>
+        )}
       </div>
     </div>
   );

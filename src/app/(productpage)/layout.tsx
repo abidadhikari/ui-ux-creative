@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div>
       <div className="my-width m-auto">
         <div className="py-10 pb-40">
-          <Link href="/" className="z-[99] relative inline-block">
+          <Link href="/" className="z-[999999] relative block">
             <Image src={arrowImage} alt="arrow" className="rotate-180" />
           </Link>
           <NavBar />

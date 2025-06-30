@@ -20,6 +20,7 @@ export default function LatestProject() {
           img1="/images/project/p11.svg"
           img2="/images/project/p12.svg"
           link="/agile-academy"
+          img="/images/project/agile/Agile1.png"
         />
         <LatestProjectCard
           title="CAREERAI"
@@ -28,6 +29,7 @@ export default function LatestProject() {
           img2="/images/project/p22.png"
           // secondImageClass="!md:rotate-[50deg]"
           link="/careerai"
+          img="/images/project/careerai/Career1.png"
         />
       </div>
     </div>

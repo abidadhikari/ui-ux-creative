@@ -9,11 +9,12 @@ interface LatestProjectCardProps {
   description?: string;
   img1: string;
   img2: string;
+  img: string;
   link: string;
   secondImageClass?: string;
 }
 export default function LatestProjectCard(props: LatestProjectCardProps) {
-  const { title, description, img1, img2, link } = props;
+  const { title, description, img1, img2, img, link } = props;
   return (
     <Link
       href={link}
@@ -29,7 +30,16 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
 
         <Image src={arrowImage} alt="arrow" />
       </div>
-      <div className="md:h-[250px] flex flex-col md:flex-row items-center justify-center gap-5 relative  w-full">
+      <div className="h-[200px] md:h-[310px] 3xl:h-[400px] w-full max-w-full md:translate-y-[50px] md:group-hover:translate-y-0   transition-all ease-in-out ">
+        <Image
+          width={550}
+          height={600}
+          src={img}
+          alt="Project Image"
+          className=" w-full  "
+        />
+      </div>
+      {/* <div className="md:h-[250px] flex flex-col md:flex-row items-center justify-center gap-5 relative  w-full">
         <div className="h-[200px] md:h-[502px] w-[550px] max-w-full   md:translate-y-[160px] md:rotate-[-10deg] md:group-hover:translate-y-[120px] transition-all ease-in-out">
           <Image
             width={550}
@@ -54,7 +64,7 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
             className=" w-full  rounded-2xl"
           />
         </div>
-      </div>
+      </div> */}
     </Link>
   );
 }
