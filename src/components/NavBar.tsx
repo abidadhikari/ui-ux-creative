@@ -70,7 +70,7 @@ export default function NavBar() {
         )}
       </button>
       {openNavBar && (
-        <nav className="bg-[url('/herogradient.svg')] sm:bg-none flex  items-start sm:items-center justify-start sm:justify-center  flex-col sm:flex-row gap-0  text-sm md:text-lg text-black bg-white backdrop-blur-2xl w-screen sm:w-fit sm:max-w-[90%]  px-[25px]  sm:px-[20px] py-[89px] sm:py-2 rounded-0 sm:rounded-[100px] shadow-2xl h-[100vh]  sm:h-fit ">
+        <nav className="bg-[url('/herogradient.svg')] sm:bg-none flex  items-start sm:items-center justify-start sm:justify-center  flex-col sm:flex-row gap-0  text-[18px] md:text-lg text-black bg-white backdrop-blur-2xl w-screen sm:w-fit sm:max-w-[90%]  px-[25px]  sm:px-[20px] py-[89px] sm:py-2 rounded-0 sm:rounded-[100px] shadow-2xl h-[100vh]  sm:h-fit ">
           <Link
             href="/#work"
             onClick={() => {

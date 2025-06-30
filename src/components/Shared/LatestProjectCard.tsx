@@ -30,7 +30,7 @@ export default function LatestProjectCard(props: LatestProjectCardProps) {
 
         <Image src={arrowImage} alt="arrow" />
       </div>
-      <div className="h-[200px] md:h-[310px] 3xl:h-[400px] w-full max-w-full md:translate-y-[50px] md:group-hover:translate-y-0   transition-all ease-in-out ">
+      <div className="h-fit md:h-[310px] 3xl:h-[400px] w-full max-w-full md:translate-y-[50px]   transition-all ease-in-out ">
         <Image
           width={550}
           height={600}
