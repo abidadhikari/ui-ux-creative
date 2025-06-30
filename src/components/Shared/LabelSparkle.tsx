@@ -16,7 +16,7 @@ export default function LabelSparkle(props: {
         `font-space-grotesk  border-black border-[8px] py-[10px] px-[25px] lg:px-[45px] text-[14px] sm:text-[29px] rounded-[92px] relative`,
         className,
         {
-          "border-[4px] px-[25px] py-[10px] !w-fit  translate-0 flex items-center justify-center ":
+          "border-[4px] px-[25px] py-[10px] !w-fit  translate-0 flex items-center justify-center font-bold ":
             small,
         }
       )}

@@ -30,7 +30,7 @@ export default function StepsSection() {
       <div className="w-full flex flex-col gap-[65px] items-center justify-center relative">
         <div className="hidden sm:block relative lg:absolute left-0">
           <LabelSparkle
-            className="bg-[#F3ABCB] md:rotate-[-15deg] transition-all hover:rotate-0  "
+            className="bg-[#F3ABCB] md:rotate-[-15deg] transition-all hover:rotate-0 font-bold "
             text="Our Process"
             isLeft={true}
             small
